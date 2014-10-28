@@ -24,17 +24,9 @@ module Shifter(shift_string,shift_amount,left,r);
 	input wire left;
 	output wire signed [15:0] r;
 	
-	always@(left)
-		begin
-			if(left)
-				r=shift_string << shift_amount;
-			else if(shift_string[15]==1)
-				//shift_string=(~shift_string);
-				r=shift_string >> shift_amount;
-			else
-				r=shift_string >> shift_amount;
-				
-		end
-
-
+	assign r =
+		(left)?(shift_string << shift_amount):0 |
+		(!left && shift_string[15])?(~((~shift_string) >> shift_amount)):0 |
+		(!left && !shift_string[15])?(shift_string >> shift_amount):0;
+		
 endmodule
