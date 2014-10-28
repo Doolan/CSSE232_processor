@@ -1,0 +1,5 @@
+set -tmpdir "/home/xniccum/projects/csse132/lab04/Components/work/xst/projnav.tmp"
+set -xsthdpdir "/home/xniccum/projects/csse132/lab04/Components/work/xst"
+elaborate
+-ifn VarShifter.prj
+-ifmt mixed

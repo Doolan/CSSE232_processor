@@ -1,0 +1,13 @@
+ISim log file
+Running: /home/xniccum/projects/csse132/lab04/Components/work/add1b_tb_0_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/xniccum/projects/csse132/lab04/Components/work/add1b_tb_0_isim_beh.wdb 
+ISim O.87xd (signature 0x8ddf5b5d)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+1
+1
+# exit 0

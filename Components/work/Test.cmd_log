@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/xniccum/projects/csse132/lab04/Components/work/Test.xst" -ofn "/home/xniccum/projects/csse132/lab04/Components/work/Test.syr" 
+xst -intstyle ise -ifn "/home/xniccum/projects/csse132/lab04/Components/work/Test.xst" -ofn "/home/xniccum/projects/csse132/lab04/Components/work/Test.syr" 
+xst -intstyle ise -ifn "/home/xniccum/projects/csse132/lab04/Components/work/Test.xst" -ofn "/home/xniccum/projects/csse132/lab04/Components/work/Test.syr" 
+xst -intstyle ise -ifn "/home/xniccum/projects/csse132/lab04/Components/work/Test.xst" -ofn "/home/xniccum/projects/csse132/lab04/Components/work/Test.syr" 

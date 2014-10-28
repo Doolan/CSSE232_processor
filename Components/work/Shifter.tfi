@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Shifter instance_name (
+    .shift_amount(shift_amount), 
+    .shift_string(shift_string), 
+    .left(left), 
+    .shifted_string(shifted_string)
+    );
+
+

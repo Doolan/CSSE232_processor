@@ -1,0 +1,11 @@
+vhdtdtfi -lib work /home/xniccum/projects/csse132/lab04/Components/Shifter.v -lang verilog -prj Components -o Shifter.spl -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Shifter.spl /home/xniccum/projects/csse132/lab04/Components/Shifter.sym 
+vhdtdtfi -lib work /home/xniccum/projects/csse132/lab04/Components/Shifter.v -lang verilog -prj Components -o Shifter.spl -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Shifter.spl /home/xniccum/projects/csse132/lab04/Components/Shifter.sym 
+vhdtdtfi -lib work /home/xniccum/projects/csse132/lab04/Components/Shifter.v -lang verilog -prj Components -o Shifter.spl -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Shifter.spl /home/xniccum/projects/csse132/lab04/Components/Shifter.sym 
+vhdtdtfi -lib work /home/xniccum/projects/csse132/lab04/Components/Shifter.v -lang verilog -prj Components -o Shifter.spl -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Shifter.spl /home/xniccum/projects/csse132/lab04/Components/Shifter.sym 
+vhdtdtfi -lib work /home/xniccum/projects/csse132/lab04/Components/Shifter.v -lang verilog -prj Components -o Shifter.spl -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Shifter.spl /home/xniccum/projects/csse132/lab04/Components/Shifter.sym 
+vhdtdtfi -lang verilog -prj Components -o /home/xniccum/projects/csse132/lab04/Components/work/Shifter.tfi -lib work /home/xniccum/projects/csse132/lab04/Components//Shifter.v -module Shifter -template /opt/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

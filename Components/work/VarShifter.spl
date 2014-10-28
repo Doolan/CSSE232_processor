@@ -1,0 +1,10 @@
+[Inputs]
+shift_amount
+shift_string
+left
+[Outputs]
+shifted_string
+[BiDir]
+[ATTRIBUTES]
+VeriModel VarShifter
+

@@ -1,0 +1,42 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/xniccum/projects/csse132/lab04/Components/work/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/xniccum/projects/csse132/lab04/Components/work/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Shifter.v" in library work
+Compiling verilog file "Test.vf" in library work
+Module <Shifter> compiled
+Module <Test> compiled
+ERROR:HDLCompilers:247 - "../Shifter.v" line 30 Reference to vector wire 'r' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "../Shifter.v" line 30 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "../Shifter.v" line 33 Reference to vector wire 'r' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "../Shifter.v" line 33 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "../Shifter.v" line 35 Reference to vector wire 'r' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "../Shifter.v" line 35 Illegal left hand side of blocking assignment
+Analysis of file <"Shifter.prj"> failed.
+--> 
+
+
+Total memory usage is 474396 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
