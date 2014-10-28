@@ -1,0 +1,38 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/work/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/work/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../Register_File.v" in library work
+Compiling verilog file "Test.vf" in library work
+Module <Register_File> compiled
+Module <Test> compiled
+ERROR:HDLCompilers:246 - "../Register_File.v" line 34 Reference to vector reg array 'ref_f' is not a legal net lvalue
+ERROR:HDLCompilers:53 - "../Register_File.v" line 34 Illegal left hand side of continuous assign
+Analysis of file <"Register_File.prj"> failed.
+--> 
+
+
+Total memory usage is 474388 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+verilog work "../Register_File.v"
+verilog work "Test.vf"

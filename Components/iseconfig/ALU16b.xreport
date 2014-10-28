@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-10-27T21:56:54</DateModified>
+  <DateModified>2014-10-27T23:44:52</DateModified>
   <ModuleName>ALU16b</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/xniccum/projects/csse132/lab04/Components/iseconfig/ALU16b.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/xniccum/projects/csse132/lab04/Components/work</ImplementationReportsDirectory>
+  <SavedFilePath>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/iseconfig/ALU16b.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/work/</ImplementationReportsDirectory>
   <DateInitialized>2014-10-27T21:56:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
