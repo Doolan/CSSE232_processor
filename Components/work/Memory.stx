@@ -20,24 +20,19 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "../Register_File.v" in library work
+Compiling verilog file "../Memory.v" in library work
 Compiling verilog file "Test.vf" in library work
-Module <Register_File> compiled
-Module <Test> compiled
-No errors in compilation
-Analysis of file <"Register_File.prj"> succeeded.
- 
-
-
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
- 
+ERROR:HDLCompilers:26 - "../Memory.v" line 32 unexpected token: 'endmodule'
+ERROR:HDLCompilers:26 - "Test.vf" line 23 unexpected token: 'Test'
+ERROR:HDLCompilers:26 - "Test.vf" line 23 expecting '=', found ')'
+Module <Memory> compiled
+Analysis of file <"Memory.prj"> failed.
 --> 
 
 
-Total memory usage is 474396 kilobytes
+Total memory usage is 474392 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    3 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

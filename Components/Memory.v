@@ -26,7 +26,5 @@ module Memory(address,write_data,r_flag,w_flag,clk,read_data);
 	input wire clk;
 	output wire signed [15:0] read_data;
 	reg [15:0] mem[15:0];
-	
-	assign 
 
 endmodule

@@ -32,6 +32,8 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU16b_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU1b.prj"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU1b.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Memory.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Memory.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register_File.prj"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Register_File.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Shifter.prj"/>
