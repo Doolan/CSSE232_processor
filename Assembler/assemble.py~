@@ -2,6 +2,23 @@ import sys
 import getopt
 
 instructions=['add',
+	'and',
+	'ber',
+	'lst',
+	'nor',
+	'or',
+	'sub',
+	'lw',
+	'sll',
+	'srl',
+	'sw',
+	'lpc',
+	'spc',
+	'lc',
+	'addc'
+	'j',
+	'jal',
+	'beq']
 op_codes={'add':'0000',
 	'and':'0001',
 	'ber':'0010',
@@ -76,24 +93,52 @@ def main(argv):
 		sys.exit(1)
 	if outputf=='':
 		outputf=open('output.ass','w')
+	line_num=0
 	for l in inputf:
 		outputf.write(parse(l)+'\n')
+		line_num+=1
 
 def parse(l):
-	l=l.strip()
-	if l=='':
-		return ''
+	l=clean_string(l)
 	l=l.lower()
 	i=l.index(' ')
 	c=l.index(',')
 	if l[:i] in op_codes:
-		return op_codes[l[:i]]+parse(l[(i+1):])
+                if l[:i] is 'lc':
+                        pass
+                elif l[:i] is 'j':
+                        return parseJ(l[(i+1):])
+                elif l[:i] is 'jal':
+                        return parseJAL(l[(i+1):]
+                #elif l[:i] is 'beq':
+                        #return parseBEQ(l[(i+1):]
+                #else:
+                        #return op_codes[l[:i]]+parse(l[(i+1):])
 	if l[:c].rstrip() in registers:
 		return registers[l[:c]]+parse(l[(c+1):])
-	elif :
 	else:
-		print("error in syntax")
-		sys.exit()
-			
-	
+		print("error in syntax)
+		sys.exit()"
+
+def parseLC(l):
+        l=hex(int(l))
+        if int(l)<=65,536:
+                #running psuedo-version
+                s=l[2:]
+        elif int(l)<=256:
+                #running hardware-version
+                return '1110'+dest+l[2:]
+        #throw exception here
+                
+def parseJ(l):
+	pass
+def parseJAL(l):
+	pass
+def parseBEQ(l):
+	pass
+def clean_string(s):
+        s=s.strip()
+	if s=='':
+		return ''
+	return s.lower()
 main(sys.argv[1:])
