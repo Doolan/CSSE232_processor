@@ -18,10 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Register16b(in,out,w_flag);
+module Register16b(in,out,w_flag,clk);
 	input [15:0] in;
 	input w_flag;
 	output [15:0] out;
+	input clk;
 	
 	reg [15:0] Register;
 	
