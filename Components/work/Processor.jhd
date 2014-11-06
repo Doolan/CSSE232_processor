@@ -1,1 +1,3 @@
 MODULE Processor
+	SUBMODULE blockmemory16kx1
+		INSTANCE XLXI_1
