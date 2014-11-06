@@ -28,6 +28,8 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../mux16b8.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="Register16b.spl"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux16b4_drc.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux16b8_drc.vf"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sign_extend_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="state_machine_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -56,11 +58,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1415236325" xil_pn:in_ck="-8206244145161405268" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8520247993101892974" xil_pn:start_ts="1415236324">
+    <transform xil_pn:end_ts="1415242774" xil_pn:in_ck="-4328075407862235882" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8520247993101892974" xil_pn:start_ts="1415242773">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
     </transform>
     <transform xil_pn:end_ts="1415236183" xil_pn:in_ck="7650336507256037478" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6582157550959842335" xil_pn:start_ts="1415236183">
       <status xil_pn:value="SuccessfullyRun"/>
