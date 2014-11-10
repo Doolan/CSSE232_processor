@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Shifter(shift_string,shift_amount,left,r);
-	input wire [15:0] shift_string;
-	input wire [3:0] shift_amount;
+	input wire signed [15:0] shift_string;
+	input wire signed [3:0] shift_amount;
 	input wire left;
-	output wire [15:0] r;
+	output wire signed [15:0] r;
 	
 	assign r =
 		(left)?(shift_string << shift_amount):0 |
