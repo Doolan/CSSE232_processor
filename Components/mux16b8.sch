@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drawing version="7">
-    <attr value="spartan3e" name="DeviceFamilyName">
+    <attr value="artix7" name="DeviceFamilyName">
         <trait delete="all:0" />
         <trait editname="all:0" />
         <trait edittrait="all:0" />
@@ -164,7 +164,6 @@
         <signal name="O(12)" />
         <signal name="O(13)" />
         <signal name="O(14)" />
-        <signal name="V" />
         <port polarity="Input" name="A(15:0)" />
         <port polarity="Input" name="B(15:0)" />
         <port polarity="Input" name="C(15:0)" />
@@ -1343,11 +1342,12 @@
         <iomarker fontsize="28" x="400" y="720" name="G(15:0)" orien="R180" />
         <iomarker fontsize="28" x="400" y="800" name="H(15:0)" orien="R180" />
         <iomarker fontsize="28" x="400" y="960" name="S(2:0)" orien="R180" />
-        <instance x="336" y="1184" name="XLXI_86" orien="R0" />
         <branch name="V">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="560" y="1200" type="branch" />
             <wire x2="400" y1="1184" y2="1200" x1="400" />
-            <wire x2="560" y1="1200" y2="1200" x1="400" />
+            <wire x2="544" y1="1200" y2="1200" x1="400" />
+            <wire x2="560" y1="1200" y2="1200" x1="544" />
         </branch>
+        <instance x="336" y="1184" name="XLXI_86" orien="R0" />
     </sheet>
 </drawing>
