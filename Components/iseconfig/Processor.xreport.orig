@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-11-05T22:43:26</DateModified>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
   <DateModified>2014-11-09T18:52:35</DateModified>
+=======
+  <DateModified>2014-11-09T19:01:52</DateModified>
+>>>>>>> Stashed changes
   <ModuleName>Processor</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
