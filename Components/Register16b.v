@@ -26,12 +26,15 @@ module Register16b(in,out,w_flag,clk);
 	
 	reg signed [15:0] Register;
 	
-	always@(in)
-	begin
-		if(w_flag)
-			Register=in;
-	end
+	always@(posedge clk)
+		begin
+			always@(in)
+				begin
+					if(w_flag)
+						Register=in;
+				end
 	
-	assign out=Register;
+		assign out=Register;
+		end
 
 endmodule
