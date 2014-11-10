@@ -28,13 +28,11 @@ module Register16b(in,out,w_flag,clk);
 	
 	always@(posedge clk)
 		begin
-			always@(in)
-				begin
-					if(w_flag)
-						Register=in;
-				end
-	
-		assign out=Register;
+			if(w_flag)
+				Register=in;
+			end
 		end
+		
+	assign out=Register;
 
 endmodule
