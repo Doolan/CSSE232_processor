@@ -88,6 +88,8 @@
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="mux16b4.vf"/>
+      <outfile xil_pn:name="mux16b8.vf"/>
     </transform>
     <transform xil_pn:end_ts="1415245305" xil_pn:in_ck="7650336507256037478" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6582157550959842335" xil_pn:start_ts="1415245305">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -101,9 +103,17 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="../Register16b_tb.v"/>
+      <outfile xil_pn:name="../Register_File.v"/>
+      <outfile xil_pn:name="../Shifter.v"/>
+      <outfile xil_pn:name="../Shifter_tb.v"/>
+      <outfile xil_pn:name="../m14b4.v"/>
+      <outfile xil_pn:name="../mux16b4_tf.v"/>
+      <outfile xil_pn:name="../mux16b8_tb_0.v"/>
+      <outfile xil_pn:name="../sign_extend.v"/>
+      <outfile xil_pn:name="../state_machine.v"/>
+      <outfile xil_pn:name="mux16b4.vf"/>
+      <outfile xil_pn:name="mux16b8.vf"/>
     </transform>
     <transform xil_pn:end_ts="1415245791" xil_pn:in_ck="-141486502028479550" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1619818577404524890" xil_pn:start_ts="1415245790">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -114,14 +124,20 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux16b4_mux16b4_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="mux16b4_mux16b4_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
     <transform xil_pn:end_ts="1415245791" xil_pn:in_ck="-2303182502934997420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5805001229298187351" xil_pn:start_ts="1415245791">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux16b4_mux16b4_sch_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1415236182" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1415236182">
