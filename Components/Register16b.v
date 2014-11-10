@@ -19,12 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Register16b(in,out,w_flag,clk);
-	input [15:0] in;
+	input signed [15:0] in;
 	input w_flag;
-	output [15:0] out;
+	output signed [15:0] out;
 	input clk;
 	
-	reg [15:0] Register;
+	reg signed [15:0] Register;
 	
 	always@(in)
 	begin

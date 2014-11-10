@@ -66,6 +66,19 @@ module state_machine(ReadAddr,
 	reg PCWrite;
 	reg RegWrite;
 	reg MemWrite;
+	reg AWrite;
+	reg BWrite;
+	reg CWrite;
+	reg ShifterInput;
+	reg ShifterControl;
+	reg ShifterLeft;
+	reg PCWriteCond;
+	reg RegRead;
+	reg ALUOutWrite;
+	reg CSource;
+	reg RegDest;
+	reg MemToReg;
+	reg MDWrite;
 
 	//states
 	reg [3:0] current_state;
@@ -83,7 +96,7 @@ module state_machine(ReadAddr,
 	parameter Load_Word_1=8;
 	parameter Load_Word_2=9;
 	parameter Shift_L=10;
-	parameter Shift_R=11
+	parameter Shift_R=11;
 	parameter Load_Shift=12;
 	parameter Lpc_Calculate=13;
 	parameter Lpc_Load=14;
@@ -92,15 +105,15 @@ module state_machine(ReadAddr,
 	parameter Loading_Calculations=17;
 	parameter Addc=18;
 	parameter LC=19;
-	parameter Fetch=20;
-	parameter Fetch=21;
-	parameter Fetch=22;
+	//parameter Fetch=20;
+	//parameter Fetch=21;
+	//parameter Fetch=22;
 
 	//handle reset
 	always @ (posedge CLK,posedge Reset)
 	begin
 		if(Reset)
-			currrent_state=0;
+			current_state=0;
 		else
 			current_state=next_state;
 	end
@@ -133,30 +146,30 @@ module state_machine(ReadAddr,
 					IRWrite=0;
 				end
 			R_Execution:
-	            begin
-	                ALUControl=0;
+				begin
+					ALUControl=0;
 					ALUA=1;
 					ALUB=1;
 					ALUOutWrite=1;
-					CSrc=0;
+					CSource=0;
 					RegRead=0;
 					CWrite=1;
 					PCWrite=0;
 					PCWriteCond=0;
 					MemWrite=0;
 					IRWrite=0;
-					//RegWrite=0;
-	            end
-	        R_Write:
-	            begin
-	            	RegWrite=1;
+					RegWrite=0;
+				end
+			R_Write:
+				begin
+					RegWrite=1;
 					RegDest=0;
 					MemToReg=0;
-					/*PCWrite=0;
+					PCWrite=0;
 					PCWriteCond=0;
 					MemWrite=0;
-					IRWrite=0;*/
-	            end
+					IRWrite=0;
+				end
 			Ber:
 				begin
 					PCWrite=0;
@@ -282,7 +295,7 @@ module state_machine(ReadAddr,
 			Spc_Calculate:
 				begin
 					RegRead=0;
-					ALUa=3;
+					ALUA=3;
 					ALUB=2;
 					ShifterInput=1;
 					ShifterControl=0;
@@ -342,18 +355,18 @@ module state_machine(ReadAddr,
 					RegWrite=1;
 				end
 			//19://not correct Restore usr mode 1
-				begin
+				/*begin
 				end
 			//20:////not correct Restore usr mode 2
 				begin
 				end
 			//21:////not correct Exception Execute
 				begin
-				end
+				end*/
 		endcase
 	end
 	//NEXT STATE calculation (depends on current state and opcode)
-   always @ (current_state, next_state, Opcode)
+   always @ (current_state, next_state, op)
 		begin
 			$display("The current state is %d", current_state);
 			case (current_state)
@@ -373,23 +386,23 @@ module state_machine(ReadAddr,
 								end
 							8||9:
 								begin
-									next_state=Calculate_Memory:
+									next_state=Calculate_Memory;
 									$display("The next state is Calculate_Memory");
 								end
 							10:
 								begin
-									next_state=Shift_L:
+									next_state=Shift_L;
 									$display("The next state is Shift_L");
 								end
 							11:
 								begin
-									next_state=Shift_R:
+									next_state=Shift_R;
 									$display("The next state is Shift_R");
 								end
 							12||13:
 								begin
 									next_state=Loading_Calculations;
-									$display("The next state is Loading_Calculations")
+									$display("The next state is Loading_Calculations");
 								end
 							default:
 								begin
@@ -416,7 +429,7 @@ module state_machine(ReadAddr,
 					end
 				Calculate_Memory:
 					begin
-						next_state=(op==8)?Load_Word_1:(op==9)?Store_Word:Shift;
+						next_state=(op==8)?Load_Word_1:(op==9)?Store_Word:(op==10)?Shift_L:Shift_R;
 						$display("In Calculate_Memory, the next_state is %d", next_state);
 					end
 				Load_Word_1:
@@ -439,10 +452,10 @@ module state_machine(ReadAddr,
 						next_state=Reset_Memory_Read;
 						$display("In Load_Word_1, the next_state is %d", next_state);
 					end
-				Shift:
+				Shift_L||Shift_R:
 					begin
 						next_state =Load_Shift;
-						$display("In Load_Shift, the next_state is %d", next_state);
+						$display("In Shift_L||Shift_R, the next_state is %d", next_state);
 					end
 				Load_Shift:
 					begin
@@ -490,10 +503,9 @@ module state_machine(ReadAddr,
 						next_state = Fetch;
 					end
 			endcase
-
 			$display("After the tests, the next_state is %d", next_state);
-
 		end
+		 
 endmodule
 
 

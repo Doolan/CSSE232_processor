@@ -18,15 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALU16b(a,b,op,r,zero,ovfl,unfl);
-	input wire [15:0] a;
-	input wire [15:0] b;
+module ALU16b(a,b,op,r,zero,ovfl);
+	input wire signed [15:0] a;
+	input wire signed [15:0] b;
 	input wire [2:0] op;
-	output wire [15:0] r;
+	output wire signed [15:0] r;
 	output wire zero;
 	output wire ovfl;
-	output wire unfl;
-	wire [15:0] sum;
+	wire signed [15:0] sum;
 	
 	assign r=
 		(op==3'b000)?(a&b):0 |
