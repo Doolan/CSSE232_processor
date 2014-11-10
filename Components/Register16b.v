@@ -30,7 +30,6 @@ module Register16b(in,out,w_flag,clk);
 		begin
 			if(w_flag)
 				Register=in;
-			end
 		end
 		
 	assign out=Register;
