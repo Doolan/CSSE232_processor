@@ -70,16 +70,13 @@ registers={'r0':'0000',
 	't2':'1110',
 	't3':'1111'}
 
-
-
-
 def main(argv):
 	try:
 		opts, args =getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
 	except getopt.Error:
 		print("error")
 		sys.exit(2)
-	inputf='' 
+	inputf=''
 	outputf=''
 	for opt, arg in opts:
 		if opt=="-h":
@@ -99,7 +96,7 @@ def main(argv):
 	for l in inputf:
 		outputf.write(parse(l)+'\n')
 	inputf.close()
-	outputf.close()	
+	outputf.close()
 
 def parse(l):
 	parse_line= lambda line: line.strip().lower().replace(',',' ').split()
@@ -117,7 +114,7 @@ def parse(l):
                         	return parseBEQ(parts)
 			elif i is 'ret':
 				# spc ra,0
-				return '1111010000000000' 
+				return '1111010000000000'
                 	else:
                         	s+=op_codes[i]
 		elif i in registers:
@@ -146,7 +143,7 @@ def parseJAL(parts):
 	return s+'1111010100000000'			#spc at,0
 def parseBEQ(parts):
 	s=parseBIG_LC(['lc','at',parts[3]])+'\n'
-	return s+'0110'+registers[parts[1]]+registers[parts[2]]+'0101' 
+	return s+'0110'+registers[parts[1]]+registers[parts[2]]+'0101'
 def is_number(s):
 	try:
 		int(s)
@@ -161,7 +158,7 @@ def DectoBin(s,length):
 	return '{0:0{1}b}'.format(temp,length)
 def twos_comp(s):
 	convertedString=[0]*len(s)
-   	carryBit=1	
+   	carryBit=1
 	for i in range(0, len(s)):
         	if s[i]=='0':
            		convertedString[i]=1
