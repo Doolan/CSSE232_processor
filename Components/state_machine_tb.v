@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   19:17:07 11/09/2014
+// Create Date:   20:48:29 11/09/2014
 // Design Name:   state_machine
 // Module Name:   /home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/state_machine_tb.v
 // Project Name:  Components
@@ -74,7 +74,6 @@ module state_machine_tb;
 		#100;
         
 		// Add stimulus here
-		
 
 	end
       
