@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../ALU16b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Memory.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Processor.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Register16b.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Register_File.sym" xil_pn:origination="imported"/>
@@ -133,7 +134,7 @@
     </transform>
     <transform xil_pn:end_ts="1415245791" xil_pn:in_ck="-2303182502934997420" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5805001229298187351" xil_pn:start_ts="1415245791">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="mux16b4_mux16b4_sch_tb_isim_beh.wdb"/>
@@ -144,18 +145,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1415245114" xil_pn:in_ck="-4328075407862235882" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8520247993101892974" xil_pn:start_ts="1415245112">
+    <transform xil_pn:end_ts="1415579012" xil_pn:in_ck="-1525053798702824532" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8520247993101892974" xil_pn:start_ts="1415579010">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1415236183" xil_pn:in_ck="7650336507256037478" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6582157550959842335" xil_pn:start_ts="1415236183">
+    <transform xil_pn:end_ts="1415579012" xil_pn:in_ck="7650336507256037478" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6582157550959842335" xil_pn:start_ts="1415579012">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
       <status xil_pn:value="SuccessfullyRun"/>

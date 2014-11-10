@@ -1,0 +1,2 @@
+sch2hdl,-sympath,/home/schulzcc/proj232git/CSSE232_processor/Components/ipcore_dir,-intstyle,ise,-family,spartan3e,-verilog,/home/schulzcc/proj232git/CSSE232_processor/Components/work/Processor.vf,-w,/home/schulzcc/proj232git/CSSE232_processor/Components/Processor.sch
+sch2hdl,-sympath,/home/schulzcc/proj232git/CSSE232_processor/Components/ipcore_dir,-intstyle,ise,-family,spartan3e,-verilog,/home/schulzcc/proj232git/CSSE232_processor/Components/work/mux16b8.vf,-w,/home/schulzcc/proj232git/CSSE232_processor/Components/mux16b8.sch
