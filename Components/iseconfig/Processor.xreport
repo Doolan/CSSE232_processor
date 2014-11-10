@@ -1,33 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-<<<<<<< HEAD
-  <ImplementationReportsDirectory>/home/schulzcc/proj232git/CSSE232_processor/Components/work/</ImplementationReportsDirectory>
-=======
-<<<<<<< HEAD
-  <ImplementationReportsDirectory>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/work</ImplementationReportsDirectory>
-=======
-  <DateModified>2014-11-05T22:43:26</DateModified>
->>>>>>> cae716cac1af72428e364a98dfc79da3ca1649dc
-  <DateModified>2014-11-09T18:52:35</DateModified>
->>>>>>> 0c924aae48e2eae03e2f8d0027b5409bfa45dbce
+  <ImplementationReportsDirectory>/home/schulzcc/proj232git/CSSE232_processor/Components/work</ImplementationReportsDirectory>
   <ModuleName>Processor</ModuleName>
-  <DateModified>2014-11-09T19:12:36</DateModified>
-  <SavedFilePath>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
-<<<<<<< HEAD
-  <ImplementationReportsDirectory>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/work/</ImplementationReportsDirectory>
-=======
-  <DateModified>2014-11-09T18:44:29</DateModified>
-  <ModuleName>Processor</ModuleName>
-  <DateModified>2014-11-09T19:22:43</DateModified>
+  <DateModified>2014-11-09T20:30:30</DateModified>
   <SavedFilePath>/home/schulzcc/proj232git/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
-  <DateInitialized>2014-11-09T19:22:14</DateInitialized>
-  <ImplementationReportsDirectory>/home/schulzcc/proj232git/CSSE232_processor/Components/work/</ImplementationReportsDirectory>
->>>>>>> 27cc185d27d65ef526b784a0704f55a356313f32
-  <DateInitialized>2014-10-29T21:06:53</DateInitialized>
-=======
-  <DateInitialized>2014-11-09T19:12:36</DateInitialized>
->>>>>>> cae716cac1af72428e364a98dfc79da3ca1649dc
+  <DateInitialized>2014-11-09T20:30:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>
