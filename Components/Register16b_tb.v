@@ -54,11 +54,19 @@ module Register16b_tb;
 		in = 16'b1010101001010101;
 		w_flag = 1;
 		#40;
+		clk = 1;
+		#40;
+		clk = 0;
+		#40;
 		$displayh(out);	// Should be 0b1010101001010101 = 0xaa55
 		
 		
 		in = 16'b1111111100000000;
 		w_flag = 1;
+		#40;
+		clk = 1;
+		#40;
+		clk = 0;
 		#40;
 		$displayh(out);	// Should be 0xff00
 		
@@ -67,11 +75,19 @@ module Register16b_tb;
 		in = 16'b1111111111111111;
 		w_flag = 0;
 		#40;
+		clk = 1;
+		#40;
+		clk = 0;
+		#40;
 		$displayh(out);	// Should not modify with value, Expected 0xff00
 		
 		
 		in = 16'b1111000011110000;
 		w_flag = 0;
+		#40;
+		clk = 1;
+		#40;
+		clk = 0;
 		#40;
 		$displayh(out);	//Expected: 0xff00
 		
