@@ -1,16 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>/home/schulzcc/proj232git/CSSE232_processor/Components/work</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/work</ImplementationReportsDirectory>
   <ModuleName>Processor</ModuleName>
-<<<<<<< HEAD
-  <DateModified>2014-11-09T20:46:31</DateModified>
-  <SavedFilePath>/home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
-=======
-  <DateModified>2014-11-09T20:49:46</DateModified>
-  <SavedFilePath>/home/schulzcc/proj232git/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
->>>>>>> bbe0dd7e748c96d9ee44a48a891b7a99fbdb9b33
-  <DateInitialized>2014-11-09T20:30:29</DateInitialized>
+  <DateInitialized>2014-11-09T21:04:28</DateInitialized>
+  <DateModified>2014-11-09T21:04:28</DateModified>
+  <SavedFilePath>C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/iseconfig/Processor.xreport</SavedFilePath>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>

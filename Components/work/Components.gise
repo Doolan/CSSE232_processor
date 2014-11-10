@@ -24,6 +24,7 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Memory.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Register16b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../mux16b2.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Memory_drc.vf"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register16b.prj"/>
