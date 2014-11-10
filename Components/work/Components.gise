@@ -22,8 +22,11 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../Components.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../Register16b.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="Memory_drc.vf"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register16b.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Register16b.spl"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Register16b.xst"/>
   </files>
 

@@ -2,7 +2,11 @@ MO Test NULL Test.vf vlg14/_test.bin 1414519146
 MO VarShifter NULL ../VarShifter.v vlg12/_var_shifter.bin 1414269891
 MO Register_File NULL ../Register_File.v vlg3C/_register___file.bin 1414519146
 MO m14b4 NULL ../m14b4.v vlg3C/m14b4.bin 1415245174
+<<<<<<< HEAD
 MO Register16b NULL ../Register16b.v vlg1E/_register16b.bin 1415583893
+=======
+MO Register16b NULL ../Register16b.v vlg1E/_register16b.bin 1415583815
+>>>>>>> bbe0dd7e748c96d9ee44a48a891b7a99fbdb9b33
 MO ALU1b NULL ../ALU1b.v vlg71/_a_l_u1b.bin 1414349464
 MO add1b NULL ../add1b.v vlg40/add1b.bin 1414292501
 MO Shifter NULL ../Shifter.v vlg59/_shifter.bin 1414463649

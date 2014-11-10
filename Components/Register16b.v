@@ -18,10 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Register16b(in,out,w_flag,clk);
-	input signed [15:0] in;
+module Register16b(inp,outp,w_flag,clk);
+	input signed [15:0] inp;
 	input w_flag;
-	output signed [15:0] out;
+	output signed [15:0] outp;
 	input clk;
 	
 	reg signed [15:0] Register;
@@ -29,9 +29,9 @@ module Register16b(in,out,w_flag,clk);
 	always@(posedge clk)
 		begin
 			if(w_flag)
-				Register=in;
+				Register=inp;
 		end
 		
-	assign out=Register;
+	assign outp=Register;
 
 endmodule
