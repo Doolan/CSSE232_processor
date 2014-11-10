@@ -47,7 +47,7 @@ module sign_extend_tb;
 		$display("testing sign extend");
 		in_bit_string = 8'b11110000;
 		#40;
-		$displayh(out_bit_string);		//Expected: 0x00f0
+		$displayh(out_bit_string);		//Expected: 0xfff0
 		
 		in_bit_string = 8'b00001111;
 		#40;
