@@ -2,41 +2,67 @@
 
   `timescale 1 ns / 1 ps
 
-  module TEST_gate;
-          reg <signal1>;
-          reg [2:0] <signal2>;
-          wire [3:0] <signal3>;
-          wire <signal4>;
+  module Processor_Tim_test();
+  
+   // Inputs
+	reg IRWrite;
+	reg clk;
+	reg [15:0] MemData;
+	reg [3:0] D_1;
+	reg [1:0] S_1;
+	reg S_2;
+	reg [3:0] D_3;
+	reg [1:0] S_3;
+	reg w_flag;
+	reg clk2;
+	reg [15:0] w_data;
 
-          <module_name> <instance_name> (
-                  <port1>,
-                  <port2>
-          );
+	// Outputs
+	wire [3:0] OpCode;
+	wire [15:0] read1;
+	wire [15:0] read2;
 
-          integer <name1>;
-          integer <name2>;
+	// Instantiate the Unit Under Test (UUT)
+	Register16b uut (
+		.IRWrite(IRWrite), 
+		.clk(clk),
+		.MemData(MemData),
+		.D_1(D_1),
+		.S_1(S_1),
+		.S_2(S_2),
+		.D_3(D_3),
+		.S_3(S_3),
+		.w_flag(w_flag),
+		.clk2(clk2),
+		.w_data(w_data),
+		.OpCode(OpCode),
+		.read1(read1),
+		.read2(read2)
+	);
 
-   // The following code initializes the Global Set Reset (GSR) and Global Three-State (GTS) nets
-   // Refer to the Synthesis and Simulation Design Guide for more information on this process
-   reg GSR;
-   assign glbl.GSR = GSR;
-   reg GTS;
-   assign glbl.GTS = GTS;
 
-   initial begin
-      GSR = 1;
-      GTS = 0; // GTS is not activated by default
-      #100; // GSR is set for 100 ns
-      GSR = 0;
+  
+  
+  
+  // Initialize Inputs
+	initial begin
+	// Initialize Inputs
+		IRWrite = 0;
+		MemData = 16'b0001001001001000;
+		S_1 = 2'b0;
+		S_2 = 1'b0;
+		S_3 = 2'b0;
+		w_flag = 0;
+		clk = 0;
+		clk2 = 0;
+		w_data = 16'b1000100010001000;
+		
+
+		// Wait 100 ns for global reset to finish
+		#100;
+      
+	
+
    end
 
-  // Initialize Inputs
-      `define auto_init
-
-      `ifdef auto_init
-
-          initial begin
-          end
-
-      `endif
   endmodule

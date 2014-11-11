@@ -1,2 +1,6 @@
 vhdtdtfi -lib work /home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/Register_File.v -lang verilog -prj Components -o Register_File.spl -module Register_File -template /opt/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e Register_File.spl /home/xniccum/projects/csse232/1415a-csse232-niccumas/CSSE232_processor/Components/Register_File.sym 
+vhdtdtfi -lib work C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/Register_File.v -lang verilog -prj Components -o Register_File.spl -module Register_File -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Register_File.spl C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/Register_File.sym 
+vhdtdtfi -lib work C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/Register_File.v -lang verilog -prj Components -o Register_File.spl -module Register_File -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Register_File.spl C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/Register_File.sym 

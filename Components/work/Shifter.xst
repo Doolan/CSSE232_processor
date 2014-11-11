@@ -1,5 +1,5 @@
-set -tmpdir "/home/xniccum/projects/csse132/lab04/Components/work/xst/projnav.tmp"
-set -xsthdpdir "/home/xniccum/projects/csse132/lab04/Components/work/xst"
+set -tmpdir "C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/work/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/anderst4/Documents/Courses/CSSE232/CSSE232_processor/Components/work/xst"
 elaborate
 -ifn Shifter.prj
 -ifmt mixed
